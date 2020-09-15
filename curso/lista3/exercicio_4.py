@@ -5,4 +5,4 @@ c = 1
 while c <= n - 2:
     a, b = b, a + b
     c = c + 1
-print(f'Seu número de fibonacci é: {b} ')
+print(f'Posição de fibonacci: {b} ')
