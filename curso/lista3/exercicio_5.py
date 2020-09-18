@@ -1,3 +1,6 @@
+''' Dados dois números inteiros positivos, determinar o máximo divisor comum entre eles usando
+o algoritmo de Euclides '''
+
 print('=== ALGORITMO DE EUCLIDES ===')
 n1 = int(input('Insira o 1º nº: '))
 n2 = int(input('Insira o 2º nº: '))
