@@ -1,4 +1,4 @@
 print(' === CONVERSÃO M => MM === ')
-valorMetro = float (input('Insira o valor em metros: '))
-resultadoConversao = valorMetro * 1000
-print(f'\n{valorMetro}m em milimetros é {resultadoConversao}mm')
+valor_metro = float (input('Insira o valor em metros: '))
+resultado_conversao = valor_metro * 1000
+print(f'\n{valor_metro}m em milimetros é {resultado_conversao}mm')

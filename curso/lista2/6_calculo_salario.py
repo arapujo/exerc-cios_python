@@ -1,10 +1,10 @@
 print('=== Cálculo Salário ===')
-valorHora = float(input('Informe o valor ganho por hora: '))
-trabalhoHora = float(input('Informe o nº de hora trabalhadas: '))
-salarioBruto = valorHora * trabalhoHora
-descInss = salarioBruto * 0.08
-descIr = salarioBruto * 0.11
-descSin = salarioBruto * 0.05
-descontoTotal = descInss + descIr + descSin
-salarioLiquido = salarioBruto - descontoTotal
-print(f'\nSalário Bruto: {salarioBruto} \nDesconto INSS: {descInss} \nDesconto IR: {descIr} \nDesconto Sindicato: {descSin} \nDescontos: {descontoTotal:.2f} \nSalário Líquido: {salarioLiquido}')
+valor_hora = float(input('Informe o valor ganho por hora: '))
+trabalho_hora = float(input('Informe o nº de hora trabalhadas: '))
+salario_bruto = valor_hora * trabalho_hora
+desc_inss = salario_bruto * 0.08
+desc_ir = salario_bruto * 0.11
+desc_sin = salario_bruto * 0.05
+desconto_total = desc_inss + desc_ir + desc_sin
+salario_liquido = salario_bruto - desconto_total
+print(f'\nSalário Bruto: {salario_bruto} \nDesconto INSS: {desc_inss} \nDesconto IR: {desc_ir} \nDesconto Sindicato: {desc_sin} \nDescontos: {desconto_total:.2f} \nSalário Líquido: {salario_liquido}')

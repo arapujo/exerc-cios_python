@@ -1,5 +1,5 @@
 print(' === SOMA DE DOIS NÚMEROS === ')
-numero1 = int(input('Insira o 1º número: '))
-numero2 = int(input('Insira o 2º número: '))
-soma = numero1 + numero2
-print(f'O resultado da soma é: {soma} ')
+numero_1 = int(input('Insira o 1º número: '))
+numero_2 = int(input('Insira o 2º número: '))
+soma = numero_1 + numero_2
+print(f'O resultado da soma é: {soma}')

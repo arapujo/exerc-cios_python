@@ -1,7 +1,7 @@
 print('=== SENHA USUÁRIO ===')
-nomeUsuario = input('Insira seu nome: ')
-senhaUsuario = input('Insira senha: ')
-while nomeUsuario == senhaUsuario:
+nome_usuario = input('Insira seu nome: ')
+senha_usuario = input('Insira senha: ')
+while nome_usuario == senha_usuario:
     print('\nSenha não pode ser igual usuário!')
     break
 else: 

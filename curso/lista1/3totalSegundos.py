@@ -1,10 +1,10 @@
 print(' === TOTAL DE SEGUNDOS === ')
-numeroDia = int(input('Insira a quantidade de dias: '))
-numeroHora = float(input('Insira a quantidade de horas: '))
-numeroMinuto = float(input('Insira a quantidade de minutos: '))
-numeroSegundo = float(input('Insira a quantidade de segundos: '))
-conversaoDia = numeroDia * 86400
-conversaoHora = numeroHora * 3600
-conversaoMinuto = numeroMinuto * 60
-totalSegundos = (conversaoDia + conversaoHora + conversaoMinuto + numeroSegundo)
-print(f'\nTotal de segundos: {totalSegundos}s')
+numero_dia = int(input('Insira a quantidade de dias: '))
+numero_hora = float(input('Insira a quantidade de horas: '))
+numero_minuto = float(input('Insira a quantidade de minutos: '))
+numero_segundo = float(input('Insira a quantidade de segundos: '))
+conversao_dia = numero_dia * 86400
+conversao_hora = numero_hora * 3600
+conversao_minuto = numero_minuto * 60
+total_segundos = (conversao_dia + conversao_hora + conversao_minuto + numero_segundo)
+print(f'\nTotal de segundos: {total_segundos}s')

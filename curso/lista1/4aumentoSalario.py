@@ -1,6 +1,6 @@
 print(' === AUMENTO SALÁRIO === ')
-valorSalario = float (input('Insira o valor do salário: '))
-porcentagemAumento = float (input('Insira a porcentagem do aumento: '))
-valorAumento = (porcentagemAumento/100) * valorSalario
-salarioNovo = valorSalario + valorAumento
-print(f'\nValor do aumento: R${valorAumento} \nSalário reajustado: R${salarioNovo}')
+valor_salario = float (input('Insira o valor do salário: '))
+porcentagem_aumento = float (input('Insira a porcentagem do aumento: '))
+valor_aumento = (porcentagem_aumento/100) * valor_salario
+salario_novo = valor_salario + valor_aumento
+print(f'\nValor do aumento: R${valor_aumento} \nSalário reajustado: R${salario_novo}')
