@@ -1,3 +1,6 @@
+''' vSolicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o
+preço a pagar. '''
+
 print(' === DESCONTO - PRODUTO === ')
 preco_produto = float(input('Insira o preço: '))
 percentual_desconto = float(input('Insira o valor do desconto: '))

@@ -1,3 +1,5 @@
+''' Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuário. Calculeo total em segundos.'''
+
 print(' === TOTAL DE SEGUNDOS === ')
 numero_dia = int(input('Insira a quantidade de dias: '))
 numero_hora = float(input('Insira a quantidade de horas: '))

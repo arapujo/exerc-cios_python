@@ -1,3 +1,5 @@
+''' Faça agora o contrário, de Fahrenheit para Celsius. '''
+
 print(' === CONVERSÃO TEMPERATURA °F => °C === ')
 valor_fahrenheit = float(input("Insira a temperatura: "))
 conversao = (valor_fahrenheit - 32) / 1.8 
