@@ -1,3 +1,5 @@
+''' Faça um Programa que leia três números e mostre o maior e o menor deles '''
+
 print('=== MAIOR E MENOR NÚMERO ===')
 n1 = float(input('Insira o 1º nº: '))
 n2 = float(input('Insira o 2º nº: '))

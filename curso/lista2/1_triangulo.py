@@ -1,3 +1,6 @@
+''' Faça um Programa que peça os três lados de um triângulo. O programa deverá informar se os valores podem ser
+um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno '''
+
 print('=== VERIFICAÇÃO TRIÂNGULO ===')
 l1 = float(input('Insira o 1º lado: '))
 l2 = float(input('Insira o 2º lado: '))
