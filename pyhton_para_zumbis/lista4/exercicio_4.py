@@ -9,14 +9,10 @@ statement= "The Python Software Foundation and the global Python community welco
 statement = statement.lower()
 statement = statement.replace(" ," , " " )
 statement = statement.split()
+palavra_python = []
 print(statement)
 
-while 
-
-string_1 = 'Print only the words that start with s in this sentence'
-lista = []
-lista_de_palavras = string_1.split(" ")
-for palavra in lista_de_palavras:
-    if "s" == palavra.lower()[0]:
-        lista = palavra
-        print(lista)
+for palavra in statement:
+    if palavra[0] in 'python':
+        palavra_python.append(palavra)
+print(f'\n Lista de palavras que terminam ou começam com uma das letras "PYTHON": {palavra_python}')
