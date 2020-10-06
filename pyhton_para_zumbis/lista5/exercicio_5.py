@@ -1,5 +1,4 @@
-'''  Questão E
-.
+'''  Questão E.
 Na pacata vila campestre de Ponteironuloville, todos os telefones têm 6
 dígitos. A companhia telefônica estabelece as seguintes regras sobre os números:
 1.Não pode haver dois dígitos consecutivos idênticos, porque isso é chato;

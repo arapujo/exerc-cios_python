@@ -7,18 +7,16 @@ statement = statement.lower()
 statement = statement.replace(" ," , " " )
 lista = statement.split()
 palavra = []
-
-
-for letra in lista:
-    if letra[0]  in 'python': 
-        palavra.append(letra)
-print(palavra)
-print(len(palavra))
-
 palavra2 = []
 
-for letra in palavra:
-    if len(letra) > 4:
-        palavra2.append(letra)
-print(palavra2)
+c= 0
+for letra in lista:
+    if letra[0] in 'python':
+        palavra.append(letra)
+        print(len(palavra))
+        if len(palavra) > 4:
+           palavra2.append(letra)
+            
+print(palavra)
 print(len(palavra2))
+

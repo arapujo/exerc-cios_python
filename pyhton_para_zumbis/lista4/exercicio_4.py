@@ -16,5 +16,5 @@ for palavra in statement:
     if palavra[0] in 'python' or palavra[-1] in 'python':
         palavra_python.append(palavra)
 print(f'\n Lista de palavras que terminam ou começam com uma das letras "PYTHON": {palavra_python}')
-print(len(palavra_python))
-print(len(statement))
+print(palavra_python)
+
