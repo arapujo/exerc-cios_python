@@ -46,7 +46,8 @@ def array_front9(nums):
 # hello_name('X') -> 'Hello X!'
 
 def hello_name(name):
-  return print(f'Hello {name}')
+  return (f'Hello {name}!')
+
 
 # F. make_tags
 # make_tags('i', 'Yay'), '<i>Yay</i>'
@@ -54,7 +55,7 @@ def hello_name(name):
 # make_tags('cite', 'Yay'), '<cite>Yay</cite>'
 
 def make_tags(tab, word):
-  return print(f'<{tab}>{word}<{tab}>')
+  return(f'<{tab}>{word}<{tab}>')
 
 # G. extra_end
 # seja um string s com no mínimo duas letras
