@@ -20,16 +20,12 @@ def string_splosion(s):
         string += s[:i+1]
     return string
 
-print(string_splosion('Code'))
-print(string_splosion('abc'))
-
 # C. array_count9
 # conta quantas vezes aparece o 9 numa lista nums
 
 def array_count9(nums):
   return nums.count(9)
 
-print(array_count9([1, 2, 3, 9, 9]))
 
 # D. array_front9
 # verifica se pelo menos um dos quatro primeiros é nove
@@ -42,8 +38,6 @@ def array_front9(nums):
     return True
   else:
     return False
-print(array_front9([1, 2, 3, 9, 9]))
-print(array_front9([8, 7, 6, 5]))
 
 # E. hello_name
 # seja uma string name
@@ -54,8 +48,6 @@ print(array_front9([8, 7, 6, 5]))
 def hello_name(name):
   return print(f'Hello {name}')
 
-hello_name('Bob')
-
 # F. make_tags
 # make_tags('i', 'Yay'), '<i>Yay</i>'
 # make_tags('i', 'Hello'), '<i>Hello</i>'
@@ -63,9 +55,6 @@ hello_name('Bob')
 
 def make_tags(tab, word):
   return print(f'<{tab}>{word}<{tab}>')
-
-make_tags('i', 'Yay')
-make_tags('cite', 'Yay')
 
 # G. extra_end
 # seja um string s com no mínimo duas letras
@@ -83,9 +72,6 @@ def extra_end(s):
   else:
     return print('String muito curta')
 
-extra_end('Hello')
-extra_end('ab')
-
 # H. first_half
 # seja uma string s
 # retorna a primeira metade da string
@@ -96,8 +82,6 @@ extra_end('ab')
 def first_half(s):
   return s[:len(s)//2]
   
-print(first_half('abcdef'))
-
 # I. sem_pontas
 # seja uma string s de pelo menos dois caracteres
 # retorna uma string sem o primeiro e último caracter
@@ -108,8 +92,6 @@ print(first_half('abcdef'))
 def sem_pontas(s):
     return s[1:-1]
 
-print(sem_pontas('Hello'))
-
 # J. roda2
 # rodar uma string s duas posições
 # a string possui pelo menos 2 caracteres
@@ -119,10 +101,9 @@ print(sem_pontas('Hello'))
 def roda2(s):
   return s[2:] + s[:2]
 
-print(roda2('Hello'))
-
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
+
 def test(obtido, esperado):
   if obtido == esperado:
     prefixo = ' Parabéns!'
