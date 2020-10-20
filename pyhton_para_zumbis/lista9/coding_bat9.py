@@ -39,4 +39,21 @@ def common_end(a, b):
     else:
         return False
 
+# D. maior_ponta #
+# Dada uma lista não vazia, cria uma nova lista onde todos
+# os elementos são o maior das duas pontas
+# obs.: não é o maior de todos, mas entre as duas pontas
+# maior_ponta([1, 2, 3]) -> [3, 3, 3]
+# maior_ponta([1, 3, 2]) -> [2, 2, 2]
 
+def maior_ponta(nums):
+    nova_lista = []
+    for i in range(len(nums)):
+        if nums[0] > nums[-1]:
+            nova_lista.append(nums[0])
+        else:
+            nova_lista.append(nums[-1])
+    return nova_lista
+
+print(maior_ponta([1, 2, 3]))
+print(maior_ponta([1, 3, 2]))
