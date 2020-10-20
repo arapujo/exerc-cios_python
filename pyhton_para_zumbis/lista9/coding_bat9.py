@@ -66,3 +66,16 @@ def sum2(nums):
     else:
         return nums[0]  + nums[1]
 
+# F. middle_way #
+# sejam duas listas de inteiros a e b
+# retorna uma lista de tamanho 2 contendo os elementos do
+# meio de a e b, suponha que as listas tem tamanho ímpar
+# middle_way([1, 2, 3], [4, 5, 6]) -> [2, 5]
+# middle_way([7, 7, 7], [3, 8, 0]) -> [7, 8]
+# middle_way([5, 2, 9], [1, 4, 5]) -> [2, 4]
+
+def middle_way(a, b):
+    meio_a = len(a) // 2
+    meio_b = len(b) // 2
+    nova_lista = [a[meio_a], b[meio_b]]
+    return nova_lista
