@@ -1,4 +1,3 @@
-
 # Exercícios by Nick Parlante (CodingBat)
 
 # A. near_ten #
@@ -7,8 +6,13 @@
 # near_ten(12) -> True
 # near_ten(17) -> False
 # near_ten(19) -> True
+
 def near_ten(n):
-  return
+    dist = n % 10
+
+    if dist <= 2 or dist >= 8:
+        return True
+    return False
 
 # B. lone_sum
 # Soma maluca: some os números inteiros a, b, e c
@@ -46,16 +50,12 @@ def lucky_sum(a, b, c):
   elif  a != b and a != c:
     return a + b + c
 
-print(lucky_sum(1, 2, 3))
-print(lucky_sum(1, 2, 13))
-print(lucky_sum(1, 13, 3))
-
-
 # D. double_char #
 # retorna os caracteres da string original duplicados
 # double_char('The') -> 'TThhee'
 # double_char('AAbb') -> 'AAAAbbbb'
 # double_char('Hi-There') -> 'HHii--TThheerree'
+
 def double_char(s):
   return
 
@@ -64,16 +64,21 @@ def double_char(s):
 # count_hi('abc hi ho') -> 1
 # count_hi('ABChi hi') -> 2
 # count_hi('hihi') -> 2
+
 def count_hi(s):
-  return 
+  quantidade = s.count('hi')
+  return quantidade
 
 # F. cat_dog #
 # verifica se o aparece o mesmo número de vezes 'cat' e 'dog'
 # cat_dog('catdog') -> True
 # cat_dog('catcat') -> False
 # cat_dog('1cat1cadodog') -> True
+
 def cat_dog(s):
-  return
+  qtd_cat = s.count('cat')
+  qtd_dog = s.count('dog')
+  return qtd_cat == qtd_dog
 
 # G. count_code #
 # conta quantas vezes aparece 'code'
@@ -92,14 +97,22 @@ def count_code(s):
 # end_other('Hiabc', 'abc') -> True
 # end_other('AbC', 'HiaBc') -> True
 # end_other('abc', 'abXabc') -> True
+
 def end_other(a, b):
-  return
+  a = a.lower()
+  b = b .lower()
+  tamanho = len(a) - len(b)
+  
+  if a[abs(tamanho):] == b or b[abs(tamanho):] == a:
+    return True
+  return False
 
 # I. count_evens
 # conta os números pares da lista
 # count_evens([2, 1, 2, 3, 4]) -> 3
 # count_evens([2, 2, 0]) -> 3
 # count_evens([1, 3, 5]) -> 0
+
 def count_evens(nums):
   return 
 
@@ -110,6 +123,7 @@ def count_evens(nums):
 # sum13([1, 1]) -> 2
 # sum13([1, 2, 2, 1, 13]) -> 6
 # sum13([13, 1, 2, 3, 4]) -> 0
+
 def sum13(nums):
   return 
 
