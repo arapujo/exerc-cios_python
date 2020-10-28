@@ -1,0 +1,68 @@
+print(' === SOMA DE DOIS NÚMEROS === ')
+numero1 = int(input('Insira o 1º número: '))
+numero2 = int(input('Insira o 2º número: '))
+soma = numero1 + numero2
+print(f'O resultado da soma é: {soma} ')
+
+print(' === CONVERSÃO M => MM === ')
+valorMetro = float (input('Insira o valor em metros: '))
+resultadoConversao = valorMetro * 1000
+print(f'\n{valorMetro}m em milimetros é {resultadoConversao}mm')
+
+print(' === TOTAL DE SEGUNDOS === ')
+numeroDia = int(input('Insira a quantidade de dias: '))
+numeroHora = float(input('Insira a quantidade de horas: '))
+numeroMinuto = float(input('Insira a quantidade de minutos: '))
+numeroSegundo = float(input('Insira a quantidade de segundos: '))
+conversaoDia = numeroDia * 86400
+conversaoHora = numeroHora * 3600
+conversaoMinuto = numeroMinuto * 60
+totalSegundos = (conversaoDia + conversaoHora + conversaoMinuto + numeroSegundo)
+print(f'\nTotal de segundos: {totalSegundos}s')
+
+print(' === AUMENTO SALÁRIO === ')
+valorSalario = float (input('Insira o valor do salário: '))
+porcentagemAumento = float (input('Insira a porcentagem do aumento: '))
+valorAumento = (porcentagemAumento/100) * valorSalario
+salarioNovo = valorSalario + valorAumento
+print(f'\nValor do aumento: R${valorAumento} \nSalário reajustado: R${salarioNovo}')
+
+print(' === DESCONTO - PRODUTO === ')
+precoProduto = float(input('Insira o preço: '))
+percentualDesconto = float(input('Insira o valor do desconto: '))
+valorDesconto = (percentualDesconto/100) * precoProduto
+valorNovo = precoProduto - valorDesconto
+print(f'\nValor desconto: R${valorDesconto} \nValor produto com desconto: R${valorNovo}')
+
+print(' === TEMPO DE VIAGEM === ')
+distancia = float(input('Informe a distância percorrida: '))
+velocidadeMedia = float(input('Informe a velocidade média: '))
+tempoPercorrido = distancia / velocidadeMedia
+print(f'\nO tempo de viagem foi: {tempoPercorrido}')
+
+print(' === CONVERSÃO CELSIUS => FAHRENHEIT === ')
+valorCelsius = float(input('Informe a temperatura em °C: '))
+conversao = (1.8 * valorCelsius) + 32
+print(f'\n{valorCelsius}°C convertido em Fahrenheit é {conversao}°F')
+
+print(' === CONVERSÃO TEMPERATURA °F => °C === ')
+valorFahrenheit = float(input("Insira a temperatura: "))
+conversao = (valorFahrenheit - 32) / 1.8 
+print(f'\n {valorFahrenheit}°F em Celsius é {conversao}°C')
+
+print(' === CÁLCULO CARRO ALUGADO === ')
+qtdKm = float(input('Informe a quantidade de KM rodados: '))
+qtdDia = float(input('Informe por quanto dias o carro foi alugado: '))
+precoTotal = (60 * qtdDia) + (0.15 * qtdKm)
+print(f'\nQuantidade de dias: {qtdDia} \nQuantidade de km: {qtdKm} \nPreço total: {precoTotal}')
+
+print(' === REDUÇÃO TEMPO DE VIDA PELO FUMO === ')
+qtdCigarro = int(input('Informe a quantidade de cigarro fumados por dia: '))
+qtdAno = float(input('Informe a quantidade de anos fumando: '))
+qtdCigarroTotal = qtdCigarro * (qtdAno * 365)
+qtdMinutos = qtdCigarroTotal * 10
+qtdDia = (qtdMinutos/60)/242
+print(f'\nQuantidade de cigarro fumados: {qtdCigarroTotal} \nQuantidade de dias perdidos: {qtdDia:.2f}')
+
+print(' === QUANTIDADE DE DIGÍTOS === ')
+print (f'A quantidade de digítos é: {len(str(2 ** 1000000))}')
