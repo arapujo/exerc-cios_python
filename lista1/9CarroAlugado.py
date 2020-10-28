@@ -1,5 +1,0 @@
-print(' === CÁLCULO CARRO ALUGADO === ')
-qtdKm = float(input('Informe a quantidade de KM rodados: '))
-qtdDia = float(input('Informe por quanto dias o carro foi alugado: '))
-precoTotal = (60 * qtdDia) + (0.15 * qtdKm)
-print(f'\nQuantidade de dias: {qtdDia} \nQuantidade de km: {qtdKm} \nPreço total: {precoTotal}')
