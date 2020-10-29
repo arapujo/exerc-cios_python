@@ -57,7 +57,10 @@ def lucky_sum(a, b, c):
 # double_char('Hi-There') -> 'HHii--TThheerree'
 
 def double_char(s):
-  return
+	duplicada = ''
+	for letra in s:
+		duplicada += letra * 2
+	return duplicada
 
 # E. count_hi #
 # conta o número de vezes que aparece a string 'hi'
@@ -87,8 +90,14 @@ def cat_dog(s):
 # count_code('aaacodebbb') -> 1
 # count_code('codexxcode') -> 2
 # count_code('cozexxcope') -> 2
+
 def count_code(s):
-  return 
+  contador = 0
+  for i in range(len(s)-3):
+    if s[i:i+2] == 'co' and s[i+3] == 'e':
+      contador += 1
+  return contador
+ 
 
 # H. end_other #
 # as duas strings devem ser convertidas para minúsculo via lower()
@@ -114,8 +123,12 @@ def end_other(a, b):
 # count_evens([1, 3, 5]) -> 0
 
 def count_evens(nums):
-  return 
-
+  contador = 0
+  for i in nums:
+    if i % 2 == 0:
+      contador += 1
+  return contador  
+ 
 # J. sum13 #
 # retorna a soma dos números de uma lista
 # 13 dá azar, você deverá ignorar o 13 e todos os números à sua direita
@@ -125,15 +138,25 @@ def count_evens(nums):
 # sum13([13, 1, 2, 3, 4]) -> 0
 
 def sum13(nums):
-  return 
+  if 13 in nums:
+    return sum(nums[:nums.index(13)])
+  return sum(nums)
 
 # K. has22 #
 # Verifica se na lista de números inteiros aparecem dois 2 consecutivos
 # has22([1, 2, 2]) -> True
 # has22([1, 2, 1, 2]) -> False
 # has22([2, 1, 2]) -> False
+
 def has22(nums):
-  return
+	lista = []
+	for i in range(0, len(nums)):
+		if nums[i] == 2:
+			lista.append(i)
+	for i in range(0, len(lista)-1):
+		if lista[i+1] - lista[i] == 1:
+			return True
+	return False
 
 # L. soma_na_lista #
 # Verifica se um número é soma de dois elementos distintos de uma lista
@@ -143,8 +166,13 @@ def has22(nums):
 # soma_na_lista(8, [1, 2, 3, 4]) -> False
 # soma_na_lista(4, [2, 2, 2, 2]) -> False
 # soma_na_lista(4, [2, 2, 1, 3]) -> True
+
 def soma_na_lista(n, lista):
-  return
+	for j in range(len(lista)):
+		for k in range(len(lista)):
+			if j != k and lista[j] != lista[k] and lista[j] + lista[k] == n:
+				return True
+	return False
 
 # M.Difícil: Fila de tijolos sem usar loops #
 # queremos montar uma fila de tijolos de um tamanho denominado meta
@@ -154,5 +182,7 @@ def soma_na_lista(n, lista):
 # fila_tijolos(3, 1, 8) -> True
 # fila_tijolos(3, 1, 9) -> False
 # fila_tijolos(3, 2, 10) -> True
+
 def fila_tijolos(n_peq, n_gra, meta):
-  return
+   return n_peq >= meta % 5 and n_peq + 5 * n_gra >= meta
+  
